@@ -1,2 +1,3 @@
 #!/bin/bash
-docker build .
+/usr/local/bin/docker build .
+
