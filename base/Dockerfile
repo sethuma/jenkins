@@ -8,7 +8,6 @@ RUN sed -ri 's/#UsePAM no/UsePAM no/g' /etc/ssh/sshd_config
 
 
 RUN chkconfig  iptables off
-RUN chkconfig ip6tables off
 
 RUN ntpdate pool.ntp.org
 
