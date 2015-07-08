@@ -1,0 +1,6 @@
+was/websphere  latest              0803d64ebc69        13 days ago         2.241 GB
+
+ubuntu                    jenkinsslave        2710e068a503        6 days ago          424 MB
+
+ubuntu                    oracle-xe            849d72bcedb6        9 days ago          889 MB
+
