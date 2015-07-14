@@ -1,5 +1,5 @@
 
-FROM centosbase/centos66
+FROM appcontainers/centos66
 ENV ROLE master
 ENV SSH_PASS jenkins123
 ENV ENV prod
