@@ -1,0 +1,11 @@
+docker build -t jenkins:latest  .
+install docker compose 
+place docker-compose.yml in the same dir as your Dockerfile
+execute the command to kickstart the container:  docker-compose up -d
+Jenkins runs on port 8080 so to do a port forward: 
+B
+B
+C
+C
+C
+VBoxManage controlvm boot2docker-vm natpf1 "8080,tcp,127.0.0.1,8080,,8080"

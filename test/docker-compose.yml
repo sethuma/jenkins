@@ -1,0 +1,16 @@
+data:
+  image: jenkins:latest
+  hostname: jenkins-data
+  stdin_open: true
+  tty: true
+  ports: 
+  - "8080:8080"
+  - "5000:5000"
+  restart: always
+  volumes:
+  - /var/lib/jenkins
+  - /var/lib/jenkins_slave_key
+  environment:
+  - ROLE=slave
+  - SSH_PASS=jenkinspassword
+  command: /bin/bash

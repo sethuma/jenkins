@@ -1,0 +1,13 @@
+data:
+  image: appcontainers/jenkins
+  hostname: jenkins-data
+  stdin_open: true
+  tty: true
+  restart: always
+  volumes:
+  - /var/lib/jenkins
+  - /var/lib/jenkins_slave_key
+  environment:
+  - ROLE=slave
+  - SSH_PASS=jenkinspassword
+  command: /bin/bash
